@@ -14,7 +14,6 @@
                 {{ $task->title }}
             </a>
         </div>
-
     @empty
         <p>There are no tasks!</p>
     @endforelse
