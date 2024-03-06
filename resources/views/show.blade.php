@@ -31,7 +31,7 @@
         <form action="{{ route('tasks.toggle-complete', ['task' => $task]) }}" method="POST" class="mb-0">
             @csrf
             @method('PUT')
-            <button type="button" class="btn">
+            <button type="submit" class="btn">
                 Mark as {{ $task->completed ? 'not completed' : 'completed' }}
             </button>
         </form>
@@ -39,7 +39,7 @@
         <form action="{{ route('task.destroy', ['task' => $task]) }}" method="POST" class="mb-0">
             @csrf
             @method('DELETE')
-            <button type="button" class="btn">Delete</button>
+            <button type="submit" class="btn">Delete</button>
         </form>
     </div>
 @endsection
